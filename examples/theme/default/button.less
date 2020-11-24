@@ -1,0 +1,316 @@
+@import './base.less';
+.gov-button{
+  margin: 0;
+  display: inline-block;
+  -webkit-appearance: none;
+  padding: 0 10px;
+  height: 30px;
+  background: @colorWhite;
+  box-sizing: border-box;
+  color: @fontDefaultColor;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all .3s;
+  border: 1px solid @defaultBorderColor;
+  border-radius: 4px;
+  &.gov-button__primary{
+    background:@primaryColor;
+    color: @colorWhite;
+    &:not([disabled]):hover {
+      border-color: @primaryColor;
+      background-color: @primaryColor;
+      color: @colorWhite;
+    }
+  }
+
+  &.gov-button__danger{
+    background:@colorRed;
+    color: @colorWhite;
+    border-color: @colorRed;
+    &:hover{
+      opacity: .9;
+    }
+  }
+
+  &.gov-button__text{
+    padding: 0;
+    background:transparent;
+    color:@primaryColor;
+    border: none;
+  }
+  &:disabled{
+    opacity: .6;
+    cursor: not-allowed;
+  }
+  &.is-round{
+    border-radius:40px;
+  }
+  &:not([disabled]).default:hover {
+    border-color: @primaryColor;
+    background-color: @primaryColor;
+    color: @colorWhite;
+  }
+}
+
+
+
+
+//govButton css
+i {
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+}
+
+/* 按钮类别 开始 */
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  line-height: 14px;
+}
+.btn-default,
+.btn-primary,
+.btn-normal,
+.btn-combox {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 16px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.btn-primary {
+  background: #0066ff;
+  color: #fff;
+  border: 1px solid #0066ff;
+}
+.btn-default {
+  background: #fff;
+  color: #0066ff;
+  border: 1px solid #0066ff;
+}
+.btn-normal {
+  background: #fff;
+  color: #888888;
+  border: 1px solid #888888;
+}
+.btn-combox {
+  padding: 0 8px;
+  background: #fff;
+  color: #888888;
+  border: 1px solid #888888;
+}
+.btn-link,
+.btn-iconlink,
+.btn-more {
+  font-size: 14px;
+  color: #0066ff;
+}
+.btn-primary span, .btn-primary i{
+  color: #fff;
+}
+.btn-normal span,.btn-normal i, .btn-combox span, .btn-combox i{
+  color: #888888;
+}
+.btn-default span,.btn-link span,
+.btn-iconlink span,.btn-default i,.btn-link i,
+.btn-iconlink i,.btn-comboxlink span,.btn-comboxlink i,
+.btn-more i,.btn-more span{
+  color: #0066ff;
+}
+/* 按钮类别 结束 */
+
+/* 带图标的按钮 开始 */
+.btn-default.btn-icon,
+.btn-primary.btn-icon,
+.btn-normal.btn-icon,
+.btn-combox.btn-icon,
+.btn-link.btn-icon,
+.btn-iconlink.btn-icon {
+  padding: 0 8px;
+}
+/* 带图标的按钮 结束 */
+
+/* 按钮hover 开始 */
+.btn-primary:hover{
+  background: #3384ff;
+  color: #fff;
+  border: 1px solid #3384ff;
+}
+.btn-default:hover{
+  color: #3384ff;
+  border: 1px solid #3384ff;
+}
+.btn-normal:hover {
+  color: #3384ff;
+}
+.btn-link:hover {
+  color: #3384ff;
+}
+.btn-combox:hover {
+  color: #3384ff;
+  border: 1px solid #3384ff;
+}
+.btn-primary.btn-icon:hover{
+  background: #3384ff;
+}
+.btn-default.btn-icon:hover,
+.btn-normal.btn-icon:hover,
+.btn-combox.btn-icon:hover,
+.btn-link.btn-icon:hover,
+.btn-iconlink.btn-icon:hover {
+  color: #3384ff;
+}
+.btn-default:hover span,.btn-normal:hover span,.btn-link:hover span,.btn-combox:hover span,
+.btn-default:hover i,.btn-normal:hover i,.btn-link:hover i,.btn-combox:hover i,.btn-combox:hover i {
+  color: #3384ff;
+}
+/* 按钮hover 结束 */
+
+/* 按钮内部 开始 */
+.btn-inner {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 14px;
+}
+.btn-inner .text{
+  display: inline-block;
+  vertical-align: middle;
+}
+/* 按钮内部 结束 */
+
+/* 大型按钮适配 开始 */
+.btn-default.large,
+.btn-primary.large,
+.btn-normal.large,
+.btn-combox.large {
+  padding: 0 24px;
+  height: 40px;
+  line-height: 34px;
+  font-size: 16px;
+}
+.btn-link.large,
+.btn-iconlink.large,
+.btn-comboxlink.large,
+.btn-more.large {
+  font-size: 16px;
+}
+.btn-default.large.btn-icon,
+.btn-primary.large.btn-icon,
+.btn-normal.large.btn-icon,
+.btn-combox.large,
+.btn-combox.large.btn-icon{
+  padding: 0 12px;
+}
+.btn-default.large .btn-inner,
+.btn-primary.large .btn-inner,
+.btn-normal.large .btn-inner,
+.btn-combox.large .btn-inner {
+  line-height: 16px;
+}
+.btn-link.large .btn-inner,
+.btn-iconlink.large .btn-inner,
+.btn-link.large .btn-inner .text,
+.btn-iconlink.large .btn-inner .text {
+  line-height: 16px;
+}
+.btn.btn-link.large,
+.btn.btn-iconlink.large{
+  line-height: 16px;
+}
+/* 大型按钮适配 结束 */
+
+/* 小型按钮适配 开始 */
+.btn-default.small,
+.btn-primary.small,
+.btn-normal.small,
+.btn-combox.small {
+  padding: 0 8px;
+  height: 24px;
+  line-height: 18px;
+  font-size: 12px;
+}
+.btn-link.small,
+.btn-iconlink.small,
+.btn-comboxlink.small,
+.btn-more.small {
+  font-size: 12px;
+}
+.btn-default.small .btn-inner,
+.btn-primary.small .btn-inner,
+.btn-normal.small .btn-inner,
+.btn-combox.small .btn-inner {
+  line-height: 22px;
+}
+.btn.btn-link.small,
+.btn.btn-iconlink.small{
+  line-height: 12px;
+}
+.btn-link.small .btn-inner,
+.btn-iconlink.small .btn-inner,
+.btn-link.small .btn-inner .text,
+.btn-iconlink.small .btn-inner .text {
+  line-height: 12px;
+}
+/* 小型按钮适配 结束 */
+
+/* 按钮禁用 开始 */
+.disabled.btn-primary,.disabled.btn-default,.disabled.btn-normal,.disabled.btn-combox{
+  background: #eeeeee;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  cursor: not-allowed;
+}
+.disabled.btn-comboxlink,.disabled.btn-more,.disabled.btn-radio,.disabled.btn-link,.disabled.btn-iconlink {
+  cursor: not-allowed;
+}
+.disabled span, .disabled i{
+  color: #aaaaaa;
+}
+.disabled.btn-primary:hover,.disabled.btn-default:hover,.disabled.btn-normal:hover,.disabled.btn-combox:hover,
+.disabled.btn-primary.btn-icon:hover,.disabled.btn-default.btn-icon:hover,.disabled.btn-normal.btn-icon:hover,.disabled.btn-combox.btn-icon:hover {
+  background: #eeeeee;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
+  cursor: not-allowed;
+}
+.disabled:hover span, .disabled:hover i {
+  color: #aaaaaa;
+}
+/* 按钮禁用 结束*/
+
+/* 下拉按钮 开始 */
+.combox-allow {
+  transition: transform 0.3s ease;
+}
+.transTop {
+  transform: rotate(-180deg);
+}
+.optionsPanel{
+  position: absolute;
+  left: 0;
+  background: #fff;
+  box-sizing: border-box;
+  z-index: 2;
+  max-height: 200px;
+  transition: height .3s ease, opacity .3s ease, border .28s ease;
+  color: #888888;
+  border: 0;
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  opacity: 0;
+}
+.panelItem{
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+.panelItem:hover{
+  background-color: #E5EFFF;
+}
+/* 下拉按钮 结束 */
