@@ -7,7 +7,6 @@ let routes = [];
 
 Object.keys(navConf).forEach((header) => {
   routes = routes.concat(navConf[header]);
-  console.log('navConf: ', navConf[header]);
 });
 
 const addComponent = (router) => {
@@ -26,14 +25,11 @@ const addComponent = (router) => {
       // eslint-disable-next-line
       route.component = r => require.ensure([], () =>
         // eslint-disable-next-line
-        r(import(`../docs/${route.name}.md`)));
-      // route.component = () => import(`../docs/${route.name}.md`);
-      console.log('route: ', route);
+        r(require(`../docs/${route.name}.md`)));
     }
   });
 };
 addComponent(routes);
-console.log('routes: ', routes);
 
 export default new Router({
   routes,

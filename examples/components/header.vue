@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-18 11:17:13
- * @LastEditTime: 2020-11-24 14:02:30
+ * @LastEditTime: 2020-11-24 14:57:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/components/header.vue
@@ -10,7 +10,7 @@
 <template>
   <div class="page-header">
     <div class="logo">
-      <img src="../assets/img/logo.jpeg">
+      <img src="../assets/img/logo.png">
     </div>
     <div class="ui" >gov-UI</div>
   </div>
@@ -33,8 +33,8 @@ export default {
   }
   .page-header .logo img{
     margin-top: 10px;
-    width: 280px;
-    height: 65px;
+    width: 110px;
+    height: 40px;
     margin-left: 5px;
   }
   .page-header .ui{

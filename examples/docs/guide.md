@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-18 14:29:53
- * @LastEditTime: 2020-11-18 14:32:27
- * @LastEditors: your name
+ * @LastEditTime: 2020-11-24 16:18:25
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/docs/guide.md
 -->
@@ -10,7 +10,7 @@
 
 ----
 
-`gov-ui` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库
+`gov-ui` 是一款基于 `Vue.js 2.6` 的前端 UI 组件库
 
 ## 特性
 

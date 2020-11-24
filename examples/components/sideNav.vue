@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-18 14:11:37
- * @LastEditTime: 2020-11-24 11:36:13
+ * @LastEditTime: 2020-11-24 14:26:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/components/side-nav.vue
@@ -9,12 +9,12 @@
 <!-- /* eslint-disable */ -->
 <template>
   <div class="side-nav">
-    <div v-for="title in Object.keys(data)" class="group-container">
+    <div v-for="title in Object.keys(data)" :key="title" class="group-container">
       <p class="side-nav-title">{{title}}</p>
-      <div class="side-nav-items" v-for="nav in data[title]">
+      <div class="side-nav-items" v-for="nav in data[title]" :key="nav.name">
         <router-link :to="{name: nav.name}" v-if="nav.name" :class="$route.name===nav.name ? 'active' : ''">{{nav.desc}}</router-link>
         <p v-else class="side-nav-group">{{nav.desc}}</p>
-        <div v-for="item in nav.items" >
+        <div v-for="item in nav.items" :key="item.name">
           <router-link :to="{name: item.name}" :class="$route.name===item.name? 'active': ''" class="side-nav-component">{{item.desc}}</router-link>
         </div>
       </div>

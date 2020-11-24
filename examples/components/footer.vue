@@ -1,11 +1,51 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-18 11:15:19
- * @LastEditTime: 2020-11-18 15:56:57
+ * @LastEditTime: 2020-11-24 14:35:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/components/footer.vue
 -->
+
+<template>
+  <div class="page-footer">
+    <div class="footer-container">
+      <div>
+        <div >
+          <a href="https://monkeywangs.github.io/">
+            <!-- <img src="../assets/img/cat.png" width="80"> -->
+          </a>
+          <div>
+            <p>author: gov</p>
+            <p></p>
+            <p>github: <a href="https://github.com/liwen327/gov-cw-design-vue">https://github.com/liwen327/gov-cw-design-vue</a></p>
+          </div>
+        </div>
+        <div :span="12" class="text-right">
+
+        </div>
+      </div>
+      <!-- <j-row type="flex" justify="space-between">
+        <j-col :span="12" class="text-left">
+          <a href="https://monkeywangs.github.io/">
+          </a>
+          <div>
+            <p>github: <a href="https://github.com/liwen327/gov-cw-design-vue">https://github.com/liwen327/gov-cw-design-vue</a></p>
+          </div>
+        </j-col>
+        <j-col :span="12" class="text-right">
+          <a href="https://github.com/liwen327/gov-cw-design-vue">
+          </a>
+        </j-col>
+      </j-row> -->
+    </div>
+  </div>
+</template>
+<script>
+export default {
+
+};
+</script>
 <style lang="less" type="text/less" scoped>
   .page-footer {
     padding: 30px 0 30px;
@@ -33,42 +73,3 @@
   }
 
 </style>
-
-<template>
-  <div class="page-footer">
-    <div class="footer-container">
-      <div>
-        <div >
-          <a href="https://monkeywangs.github.io/">
-            <!-- <img src="../assets/img/cat.png" width="80"> -->
-          </a>
-          <div>
-            <p>author: Jike</p>
-            <p>email: 18817843920@163.com </p>
-            <p>github: <a href="https://github.com/liuyangjike/JKUI">https://github.com/liuyangjike/JKUI</a></p>
-          </div>
-        </div>
-        <div :span="12" class="text-right">
-          <a href="https://github.com/liuyangjike/JKUI">
-            /* eslint-disable */
-          </a>
-        </div>
-      </div>
-      <!-- <j-row type="flex" justify="space-between">
-        <j-col :span="12" class="text-left">
-          <a href="https://monkeywangs.github.io/">
-          </a>
-          <div>
-            <p>author: Jike</p>
-            <p>email: 18817843920@163.com </p>
-            <p>github: <a href="https://github.com/liuyangjike/JKUI">https://github.com/liuyangjike/JKUI</a></p>
-          </div>
-        </j-col>
-        <j-col :span="12" class="text-right">
-          <a href="https://github.com/liuyangjike/JKUI">
-          </a>
-        </j-col>
-      </j-row> -->
-    </div>
-  </div>
-</template>
