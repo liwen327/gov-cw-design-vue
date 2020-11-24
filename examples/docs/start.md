@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-24 16:21:57
- * @LastEditTime: 2020-11-24 16:24:36
- * @LastEditors: your name
+ * @LastEditTime: 2020-11-24 18:19:23
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/docs/start.md
 -->
@@ -30,7 +30,7 @@
 
  > vue init webpack
 
- > npm i && npm i jk-ui --save
+ > npm i && npm i gov-ui --save
 ```
 
 ## 标准开发
@@ -42,11 +42,11 @@
 可以在项目的入口文件中引入所有组件或所需组件
 
 ```js
-import JKUI from 'jk-ui' // 引入组件库
+import GOVUI from 'gov-ui' // 引入组件库
 
- import 'jk-ui/packages/theme-default/lib/index.css' // 引入样式库
+ import 'gov-ui/packages/theme-default/lib/index.css' // 引入样式库
 
- Vue.use(JKUI)
+ Vue.use(GOVUI)
 ```
 
 ### 单个组件按需使用
@@ -54,25 +54,25 @@ import JKUI from 'jk-ui' // 引入组件库
 可以局部注册所需的组件，适用于与其他框架组合使用的场景
 
 ```js
-import { JButton } from 'jk-ui'
+import { JButton } from 'gov-ui'
 
 export default {
 
   components: {
 
-    JButton
+    govButton
   }
 }
 ```
 
-在模板中，用 `<j-button></j-button>` 自定义标签的方式使用组件
+在模板中，用 `<gov-button></gov-button>` 自定义标签的方式使用组件
 
 ```html
 <template>
 
   <div>
 
-    <j-button>这是一个按钮</j-button>
+    <gov-button>这是一个按钮</gov-button>
 
   </div>
 
