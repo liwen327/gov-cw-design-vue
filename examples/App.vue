@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-05-10 00:40:56
- * @LastEditTime: 2020-11-24 16:06:46
+ * @LastEditTime: 2020-11-25 11:25:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/App.vue
@@ -51,18 +51,18 @@ export default {
     margin: 48px auto;
     width: 100%;
     display: block;
-    background-color: rgb(182, 31, 31);
+    /* background-color: rgb(182, 31, 31); */
+    display:flex;
   }
   .footer {
     display: block;
   }
   .contianer .nav{
-    float: left;
     width: 15%;
   }
   .contianer .view{
-    float: left;
-    width: 85%;
+    /* float: left;
+    width: 85%; */
     padding: 32px 48px 48px;
     box-sizing: border-box
   }

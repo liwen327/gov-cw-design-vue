@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-24 16:21:57
- * @LastEditTime: 2020-11-24 18:19:23
+ * @LastEditTime: 2020-11-25 11:33:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /gov-cw-design-vue/examples/docs/start.md
@@ -26,9 +26,9 @@
 ```bash
 > npm i -g vue-cli
 
- > mkdir my-project && cd my-project
+ > vue create my-project(使用vue-cli3构建vue项目)
 
- > vue init webpack
+ > cd my-project
 
  > npm i && npm i gov-ui --save
 ```

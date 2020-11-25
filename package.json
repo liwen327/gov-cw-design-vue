@@ -2,7 +2,7 @@
   "name": "gov-cw-design-vue",
   "version": "1.0.0",
   "description": "用友政务财务云基础组件库,基于ant-design-vue进行二次封装，主要为了方便各项目间组件、UI的统一",
-  "author": "duanys <duanys@yonyou.com>",
+  "author": "sunny0327 <dzliwen@163.com>",
   "main": "examples/index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -11,7 +11,8 @@
     "firstV": "npm version patch",
     "middleV": "npm version minor ",
     "lastV": "npm version major",
-    "publish": "npm publish"
+    "publish": "npm publish",
+    "lib": "webpack-build-server build --target lib --gov-ui --dest lib examples/index.js"
   },
   "publishConfig": {
     "registry": "https://lib.yonyougov.top/repository/crux-npm"
